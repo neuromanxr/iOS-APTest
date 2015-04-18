@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Jelloween - Machinato Bold.ttf">
+            <string>Machinato-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainMenuViewController">
+            <connections>
+                <outlet property="view" destination="iN0-l3-epB" id="c3l-9u-x9I"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_coding_tasks" translatesAutoresizingMaskIntoConstraints="NO" id="2aa-PR-bMU">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dyY-2I-g1i">
+                    <rect key="frame" x="30" y="257" width="260" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="OSN-Co-RT6"/>
+                        <constraint firstAttribute="height" constant="65" id="rvp-2H-hMf"/>
+                    </constraints>
+                    <state key="normal" image="btn_login">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="apiSectionAction:" destination="-1" eventType="touchUpInside" id="E1z-6c-yAP"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u8J-gC-vJF">
+                    <rect key="frame" x="30" y="322" width="260" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="HTN-cW-v93"/>
+                        <constraint firstAttribute="width" constant="260" id="tyW-Ok-LtA"/>
+                    </constraints>
+                    <state key="normal" image="btn_main_animation">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="animationSectionAction:" destination="-1" eventType="touchUpInside" id="x0r-AK-Kgg"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIv-WM-yxj">
+                    <rect key="frame" x="30" y="192" width="260" height="65"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="260" id="fAx-Vf-fdz"/>
+                        <constraint firstAttribute="height" constant="65" id="kzm-wb-Z6I"/>
+                    </constraints>
+                    <state key="normal" image="btn_main_chat">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tableSectionAction:" destination="-1" eventType="touchUpInside" id="3Sa-RA-4sY"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CODING TASKS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W1L-JU-kGm">
+                    <rect key="frame" x="73" y="152" width="174" height="32"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="32" id="DFu-1k-btt"/>
+                        <constraint firstAttribute="width" constant="174" id="Hw5-Sw-0Ir"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Machinato-Bold" family="Machinato" pointSize="22"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="2aa-PR-bMU" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0EA-hG-3vL"/>
+                <constraint firstAttribute="bottom" secondItem="2aa-PR-bMU" secondAttribute="bottom" id="CjU-vE-A7x"/>
+                <constraint firstAttribute="trailing" secondItem="2aa-PR-bMU" secondAttribute="trailing" id="HMC-ko-5bk"/>
+                <constraint firstItem="W1L-JU-kGm" firstAttribute="centerY" secondItem="2aa-PR-bMU" secondAttribute="centerY" constant="-116" id="MlE-EN-KoU"/>
+                <constraint firstItem="u8J-gC-vJF" firstAttribute="top" secondItem="dyY-2I-g1i" secondAttribute="bottom" id="Vbj-nc-qUX"/>
+                <constraint firstItem="hIv-WM-yxj" firstAttribute="centerX" secondItem="dyY-2I-g1i" secondAttribute="centerX" id="b8w-VU-ywG"/>
+                <constraint firstItem="u8J-gC-vJF" firstAttribute="centerX" secondItem="dyY-2I-g1i" secondAttribute="centerX" id="c42-rS-ljM"/>
+                <constraint firstItem="dyY-2I-g1i" firstAttribute="top" secondItem="hIv-WM-yxj" secondAttribute="bottom" id="cff-Bf-hmO"/>
+                <constraint firstItem="hIv-WM-yxj" firstAttribute="top" secondItem="W1L-JU-kGm" secondAttribute="bottom" constant="8" id="h5C-Ae-ofX"/>
+                <constraint firstItem="hIv-WM-yxj" firstAttribute="centerX" secondItem="W1L-JU-kGm" secondAttribute="centerX" id="hJF-W3-wVs"/>
+                <constraint firstItem="2aa-PR-bMU" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="oQ6-ve-JGc"/>
+                <constraint firstItem="W1L-JU-kGm" firstAttribute="centerX" secondItem="2aa-PR-bMU" secondAttribute="centerX" id="vjB-6R-G2d"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bg_coding_tasks" width="320" height="568"/>
+        <image name="btn_login" width="241" height="53"/>
+        <image name="btn_main_animation" width="244" height="67"/>
+        <image name="btn_main_chat" width="241" height="53"/>
+    </resources>
+</document>
